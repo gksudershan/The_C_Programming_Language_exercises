@@ -5,7 +5,7 @@ int main()
 	int c;
 
 	// Get the data first
-	while ((c = getchar())!=EOF)
+	while ((c = getchar())!= EOF)
        	{
 	if( c>'0' || c<'9' )
 	{
@@ -18,29 +18,30 @@ int main()
 	int max_num = -1;
 	for(int i=0; i<10; i++)
 	{
-		if (ndigit[i]>max_num)
+		if (ndigit[i] > max_num)
 			max_num = ndigit[i];
 	}
 	int height = 2 * max_num;	
 
+	// Print the histogram
 	for(int i=0; i<height; i++)
 	{
 		for(int j=0; j<10; j++)
 		{
-		if(ndigit[j]>=(height-i))
-		{
+		if(ndigit[j] >= (height-i))
 			printf("# ");	
 
-		}
-		else {
-		printf("  ");
-		}
+		else
+			printf("  ");
 		}
 		printf("\n");
 	}
+
+	// Print the x-axis
 	for(int i=0; i<10; i++)
 	{
-		printf("%d ",i);
+		printf("%d ", i);
 	}
 	printf("\n");
+
 }

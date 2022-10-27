@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Program that prints the longest line length using getchar
+// Program that prints the longest line length from input till EOF using getchar
 int main()
 {
 	int c;

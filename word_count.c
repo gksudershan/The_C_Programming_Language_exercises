@@ -2,12 +2,14 @@
 #define IN 1
 #define OUT 0
 
+// A bare-bones version of UNIX's wc command
+// This program prints the no of lines, words & characters till EOF
 int main()
 {
-	int c,nl,nc,nw,state;
+	int c, nl, nw, nc, state;
 	state = OUT;
-	nl=nc=nw = 0;
-	while ((c = getchar())!=EOF) {
+	nl = nc = nw = 0;
+	while ((c = getchar()) != EOF) {
 		++nc;
 		if (c=='\n')
 		{
@@ -20,5 +22,5 @@ int main()
 			state = IN;	
 		}
 	}
-	printf("%d %d %d\n",nc,nl,nw);
+	printf("%d\t%d\t%d\n", nl, nw, nc);
 }

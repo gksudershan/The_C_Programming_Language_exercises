@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define MAX_LENGTH 1000
 
+// Fn that copies characters from current to longest array
 void copy (char longest[], char current[])
 {
 	int i=0;
