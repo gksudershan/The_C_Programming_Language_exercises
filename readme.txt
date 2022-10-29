@@ -13,6 +13,7 @@ reverse_string.c         A program that reverses input string line by line
 one_word_per_line.c      A program that gets input till EOF and prints one word per line
 longest_line.c           A program that prints the longest line from input till EOF (involves copying into char arrays)
 longest_line_length.c    A program that prints the longest line length from input till EOF (uses getchar fn)
+grep.c			 A program that emulates the linux command "grep"
 
 run     Simple script that compiles and runs simple C programs (I use Linux. Might need to be tweaked for windows)
         Usage: ./run hello.c
