@@ -11,7 +11,7 @@ int main(int argc,char **argv)
 	if (argc==1)
 	{
 		printf("Add the pattern you want to grep in the following way: \n");
-		printf("Usage: ./a.out \"hello\"\n");
+		printf("Usage: ./a.out \"hello\" or ./a.out hello\n");
 		return 0;
 	}
 	
