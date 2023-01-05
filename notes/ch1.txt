@@ -1,0 +1,6 @@
+To learn a programming language, write lot of programs in it.
+
+Any meaningful C program, whatever it's size, consists of functions & variables. Functions contain statements that instruct the computer on what to do.
+Variables store values used during the computation.
+
+The main fn is the entry point of any C program. main usually calls other functions to help perform its job, some that you wrote, and others from libraries.
